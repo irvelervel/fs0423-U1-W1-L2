@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esempio di tabella</title>
+    <style>
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      td,
+      th {
+        border: 1px solid black;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Esempio di utilizzo del tag "table"</h1>
+        <nav>
+          <!-- menu brutto! -->
+          <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contacts</li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <table>
+          <!-- inserisco la riga di intestazione in un tag thead -->
+          <!-- creo una riga di intestazione con 3 campi: Nome, Cognome, Età -->
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Cognome</th>
+              <th>Età</th>
+            </tr>
+          </thead>
+          <!-- ora inseriamo invece delle righe per i DATI -->
+          <tbody>
+            <tr>
+              <td>Mario</td>
+              <td>Rossi</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Luigi</td>
+              <td>Bianchi</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Peach</td>
+              <td>Toadstool</td>
+              <td>20</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <!-- colspan permette ad una td di occupare PIÙ spazio del normale: in questo caso, uno spazio normalmente
+              occupato da 2 celle -->
+              <td colspan="2">Età media</td>
+              <td>25</td>
+            </tr>
+          </tfoot>
+        </table>
+      </main>
+      <aside>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+          eligendi reprehenderit dolores cumque optio, quod aut architecto sed
+          minima nesciunt eos provident libero aspernatur, vero fugit
+          temporibus, totam vel dolorum.
+        </p>
+      </aside>
+      <footer>
+        <p>EPICODE @2023</p>
+      </footer>
+    </div>
+  </body>
+</html>

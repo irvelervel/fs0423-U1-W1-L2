@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esempio di form</title>
+    <style>
+      /* regole CSS per la personalizzazione del placeholder */
+      input::placeholder {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Esempio di utilizzo del tag "form"</h1>
+    <form onsubmit="alert('inviato')">
+      <div>
+        <!-- il tag "label" necessità di un attributo chiamato for: il valore di tale attributo deve essere
+        lo stesso del valore dell'attributo "id" associato all'input -->
+        <label for="name">Nome*</label>
+        <input
+          type="text"
+          placeholder="Inserisci qui il tuo nome"
+          id="name"
+          autofocus
+          maxlength="10"
+          required
+        />
+      </div>
+      <div>
+        <label for="surname">Cognome*</label>
+        <input type="text" id="surname" required />
+      </div>
+      <div>
+        <label for="age">Età</label>
+        <input type="number" id="age" />
+      </div>
+      <div>
+        <label for="bio">Biografia</label>
+        <textarea type="text" id="bio" rows="5"></textarea>
+      </div>
+      <!-- questo bottone sarà adito all'invio del form in cui è contenuto
+        grazie al suo attributo "type" che ha valore "submit" -->
+      <button type="submit">INVIA</button>
+      <button type="reset">RESET</button>
+    </form>
+  </body>
+</html>
